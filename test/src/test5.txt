@@ -1,0 +1,24 @@
+/*
+ 영화 테이블(movie)이 있고, 
+ 사용자가 평가한 영화의 평점을 저장하는 평점(rating)테이블이 있다
+
+ 영화별로 평균 평점과 평가한 숫자를 나타내는 쿼리를 작성하시오
+ 정렬은 평점이 높은순으로 정렬하시오
+
+
+결과)
+플래시	9	7.4444
+범죄도시3	6	6.5000
+스파이더맨	4	4.7500
+트랜스포머	4	2.5000
+*/
+
+
+
+/*
+select m.movie_id, count(r.movie_id) as movie_count, avg(score) as movie_average
+from rating r
+join movie m on r.movie_id = m.movie_id
+group by m.movie_id
+;
+*/
