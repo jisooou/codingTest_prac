@@ -11,33 +11,21 @@ public class Test4 {
 
         int[] array = new int[]{10, -4, 3, 1, 5, 6, -35, 12, 21, -1};
 
-        int max = -9999999;
+        int max = Integer.MIN_VALUE;
+//        int max = -9999999;
 
-        for(int i = 0; i<array.length; i++){
+        for(int i = 0; i < array.length; i++){
             int sum = 0;
-            for(int j = i; j<array.length; j++){
+
+            for(int j = i; j < array.length; j++){
                 sum = sum + array[j];
 
                 if(sum > max){
                     max = sum;
                 }
             }
-
         }
         System.out.println(max);
 
-//---------------------------------------------------------------------
-//        int max = -999999;
-//
-//        for(int i = 0; i < array.length; i++) {
-//            int sum = 0;
-//            for(int j = i; j < array.length; j++) {
-//                sum += array[j];
-//                if(sum > max) {
-//                    max = sum;
-//                }
-//            }
-//        }
-//        System.out.println(max);
     }
 }

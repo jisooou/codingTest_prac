@@ -21,48 +21,13 @@ public class Test3 {
 
         for(char c : str.toCharArray()){
             if(Character.isLetter(c)){
-                map.put(c, map.getOrDefault(c, 0)+1);
+                map.put(c, map.getOrDefault(c, 0) + 1);
             }
         }
         for(Map.Entry<Character, Integer> entry : map.entrySet()){
             System.out.println(entry.getKey() + " : " + entry.getValue());
         }
 
-
-
-
-
-//        알파벳과 숫자이기 때문에 - Character, Integer
-//        HashMap<Character, Integer> alphabetMap = new HashMap<>();
-//
-//        for(char c : str.toCharArray()){
-//            if(Character.isLetter(c)){
-//                alphabetMap.put(c, alphabetMap.getOrDefault(c, 0)+1);
-//            }
-//        }
-//
-//        for(Map.Entry<Character, Integer> entry : alphabetMap.entrySet()){
-//            System.out.println(entry.getKey() + " : " + entry.getValue());
-//        }
-
-
-
-//        Map 아닌 방법
-//        String str = "to be or not to be, that is the question.";
-//
-//        int[] alphaCount = new int['z' - 'a' + 1];
-//
-//        for(int i = 0; i < str.length(); i++){
-//            for(char j = 'a'; j <= 'z'; j++){
-//                if(str.charAt(i) == j){
-//                    alphaCount[j - 'a']++;
-//                }
-//            }
-//        }
-//
-//        for(int i = 0; i < alphaCount.length; i++) {
-//            System.out.println((char) (i + 'a') + " : " +  alphaCount[i]);
-//        }
     }
 }
 

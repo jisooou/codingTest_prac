@@ -9,58 +9,28 @@ public class Test1 {
         int[] array = new int[]{10, -4, 3, 1, 5, 6, -35, 12, 21, -1};
 
         int sum = 0;
-        int min = 999999;
-        int max = -999999;
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+//        int min = 9999999;
+//        int max = -999999;
 
-        for(int i = 0; i<array.length; i++){
-
-//            합계 구하기
+        for(int i = 0; i < array.length; i++){
             sum = sum + i;
 
-//            최소값 구하기
             if(array[i] < min){
                 min = array[i];
             }
-
-//            최대값 구하기
             if(array[i] > max){
                 max = array[i];
             }
         }
 
-//        평균 구하기
-        int avg = sum / array.length;
+        int ave = sum / array.length;
 
-        System.out.println("sum:" + sum);
-        System.out.println("min:" + min);
-        System.out.println("max:" + max);
-        System.out.println("avg:" + avg);
-
-//        -------------------------------------------------------------
-
-//        int sum = 0;
-//        int min = 999999;
-//        int max = -999999;
-//
-//        for(int i = 0; i < array.length; i++){
-////            합계 구하기
-//            sum = sum+i;
-////            최소값 구하기
-//            if(array[i] < min){
-//                min = array[i];
-//            }
-////            최대값 구하기
-//            if(array[i] > max){
-//                max = array[i];
-//            }
-//        }
-////        평균 구하기
-//        int aver = sum / array.length;
-//
-//        System.out.println("합계:" + sum);
-//        System.out.println("평균:" + aver);
-//        System.out.println("MIN:" + min);
-//        System.out.println("MAX:" + max);
+        System.out.println("sum :" + sum);
+        System.out.println("ave :" + ave);
+        System.out.println("min :" + min);
+        System.out.println("max :" + max);
 
     }
 }
